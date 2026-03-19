@@ -15,7 +15,7 @@ void main() {
 /// - isStudent (bool) — чи ти студент
 void primitives() {
 final int age  = 37;
-final double height  = 1.86;
+final double height  = 1.86; 
 final String myName = 'Roman';
 final bool isStudent  = true; 
 } 
