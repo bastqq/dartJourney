@@ -52,7 +52,12 @@ const int myDayCount = 7;
 
 /// Завдання 4: Record
 /// Створи іменований та не іменований (позиційний) record з твоїм ім'ям та віком і виведи обидва поля.
-void record() {}
+void record() {
+  var myRecord = ('Roman' , a: 37);
+print(myRecord.$1);
+print( myRecord.a);
+
+}
 
 /// Завдання 5: Nullable (опціонально)
 /// Створи змінну String? nickname — може бути null або ім'я.
