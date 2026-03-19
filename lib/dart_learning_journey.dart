@@ -17,7 +17,7 @@ void primitives() {
 final int age  = 37;
 final double height  = 1.86;
 final String myName = 'Roman';
-final bool isStudent  = true;
+final bool isStudent  = true; 
 }
 
 /// Завдання 2: Колекції
