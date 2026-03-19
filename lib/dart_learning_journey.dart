@@ -18,7 +18,7 @@ final int age  = 37;
 final double height  = 1.86;
 final String myName = 'Roman';
 final bool isStudent  = true; 
-}
+} 
 
 /// Завдання 2: Колекції
 /// 1. List — 3 твої улюблені кольори
