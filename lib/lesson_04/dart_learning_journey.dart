@@ -24,7 +24,15 @@ final bool isStudent  = true;
 /// 1. List — 3 твої улюблені кольори
 /// 2. Set — 3 унікальні оцінки, спробуй створити перевір print-ми, що вони не виводяться
 /// 3. Map — 3 предмети та їх оцінки
-void collections() {}
+void collections() {
+  final List myFavoditeColours  = ['Red' , 'Black' , 'Blue'];
+var uniqueGrades  = { 'good' , 'bad' , 'imeanitsallright'};
+var classesRate  = {
+'math' : 5,
+'chemistry' : 5 ,
+'history' : 5
+};
+}
 
 /// Завдання 3: var, final, const
 /// 1. Створи змінну через var — наприклад, місто проживання та зміни її декілька разів (print після кожної зміни)
