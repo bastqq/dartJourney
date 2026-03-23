@@ -22,6 +22,8 @@ final width = 18.4;
 final heigth = 30.9;
 final squeare = heigth * width;
 final p = heigth * 2 + width *2;
+print('Площа = $squeare');
+print('Периметр = $p');
 final fullSqueares = squeare~/1;
 }
 
@@ -33,7 +35,17 @@ final fullSqueares = squeare~/1;
 /// Чи менше число за 100.
 /// Чи ділиться число на 5 без залишку.
 /// Виведіть всі результати.
-void task2() {}
+void task2() {
+  final number = 50;
+  final isBiger = number >50;
+  final isLess = number < 100;
+  final isEqFive = (number % 5 ) == 0;
+
+print('Чи число $number  більше за 50 $isBiger');  
+print('Чи число $number менше за 100 =  $isLess');
+print('Чи число $number ділиться на 5 без залишку = $isEqFive');
+
+}
 
 /// Завдання 3: Логічні оператори
 /// Створіть змінні hasMoney і isStoreOpen (типу bool).
