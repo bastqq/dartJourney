@@ -71,7 +71,15 @@ final isHasToWait = !isStoreOpen || !hasMoney;
 /// Потім створіть ще один тернарний оператор:
 /// Якщо менше 10 — вивести “Дуже холодно”.
 
-void task4() {}
+void task4() {
+final temperature = 9;
+final isHot = (temperature>25) ? 'Тепло' : 'Прохолодно';
+final isCold = (temperature<10) ? 'Дуже холодно' : 'Температура: $temperature' ;
+//print(isHot);
+//print(isCold);
+
+
+}
 
 /// Завдання 5: Оператори присвоєння
 /// Використовувати тільки оператори присвоєння (+=, -=, *=, /=)
