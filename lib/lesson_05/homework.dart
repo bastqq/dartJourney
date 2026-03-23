@@ -54,7 +54,13 @@ print('Чи число $number ділиться на 5 без залишку = $
 /// Чи можна зробити покупку (якщо є гроші і магазин відкритий).
 /// Чи потрібно почекати (якщо магазин закритий або немає грошей).
 /// Використайте оператори &&, ||, !.
-void task3() {}
+void task3() {
+final hasMoney = true ;
+final isStoreOpen = true;
+final isCanBuy = hasMoney && isStoreOpen;
+final isHasToWait = !isStoreOpen || !hasMoney;
+
+}
 
 /// Завдання 4: Тернарний оператор
 /// Створіть змінну temperature.
