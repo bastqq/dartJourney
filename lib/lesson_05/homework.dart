@@ -1,5 +1,7 @@
 
 
+// ignore_for_file: curly_braces_in_flow_control_structures
+
 void main() {
   task1();
   task2();
@@ -232,4 +234,13 @@ while(i>=0){
 /// Якщо число ділиться на 3 без залишку — пропустіть його (continue).
 /// Якщо число більше 15 — зупиніть цикл (break).
 /// Виведіть тільки ті числа, які пройшли обидві перевірки.
-void task10() {}
+void task10() {
+for(var i = 1; i <=20; i++){
+  if(i%3==0) continue;
+  else if (i > 15) break;
+  else {print(i);}
+
+}
+
+
+}
