@@ -1,5 +1,4 @@
 import 'dart:math';
-import 'package:collection/collection.dart';
 
 
 void main() {
@@ -29,7 +28,7 @@ sumI = sumI + numbers[i];
 }
 print(sumI);
 
-List<int> temp = [];
+final temp = [];
 for(final  i in numbers){
   if(i%2 ==0)
   {
@@ -37,5 +36,4 @@ for(final  i in numbers){
     }
 }
 print(temp.length);
-
 }

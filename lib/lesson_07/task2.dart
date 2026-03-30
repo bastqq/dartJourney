@@ -8,7 +8,8 @@ void main() {
 final setPresentInBoth = ukrainianNamesDeepseek.intersection(ukrainianNamesGPT);
 print(setPresentInBoth.length);
 
-final inUkrainianNamesGPT = ukrainianNamesGPT.difference(ukrainianNamesDeepseek);
+final inUkrainianNamesGPT = 
+ukrainianNamesGPT.difference(ukrainianNamesDeepseek);
 print(inUkrainianNamesGPT);
 
 final inUkrainianNamesDeepseek = 
