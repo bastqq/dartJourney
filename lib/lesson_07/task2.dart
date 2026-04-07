@@ -13,7 +13,7 @@ void main() {
   print(inUkrainianNamesGPT);
 
   final inUkrainianNamesDeepseek = ukrainianNamesDeepseek.difference(
-    inUkrainianNamesGPT,
+    ukrainianNamesGPT,
   );
   print(inUkrainianNamesDeepseek);
 }

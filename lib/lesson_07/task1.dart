@@ -18,7 +18,7 @@ void main() {
   }
   var sumI = 0;
   for (var i = 0; i < numbers.length; i++) {
-    if (i % 3 == 0) {
+    if (numbers[i] % 3 == 0) {
       sumI = sumI + numbers[i];
     }
   }
