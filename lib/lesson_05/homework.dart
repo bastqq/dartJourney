@@ -1,5 +1,3 @@
-
-
 // ignore_for_file: curly_braces_in_flow_control_structures
 
 void main() {
@@ -22,13 +20,13 @@ void main() {
 /// Виведіть площу і периметр.
 /// Використайте оператор ~/ для обчислення скільки повних квадратів 1х1 вміщається у площу.
 void task1() {
-final width = 18.4;
-final heigth = 30.9;
-final squeare = heigth * width;
-final p = heigth * 2 + width *2;
-print('Площа = $squeare');
-print('Периметр = $p');
-final fullSqueares = squeare~/1;
+  final width = 18.4;
+  final heigth = 30.9;
+  final squeare = heigth * width;
+  final p = heigth * 2 + width * 2;
+  print('Площа = $squeare');
+  print('Периметр = $p');
+  final fullSqueares = squeare ~/ 1;
 }
 
 /// Завдання 2: Оператори порівняння
@@ -41,14 +39,13 @@ final fullSqueares = squeare~/1;
 /// Виведіть всі результати.
 void task2() {
   final number = 50;
-  final isBiger = number >50;
+  final isBiger = number > 50;
   final isLess = number < 100;
-  final isEqFive = (number % 5 ) == 0;
+  final isEqFive = (number % 5) == 0;
 
-print('Чи число $number  більше за 50 $isBiger');  
-print('Чи число $number менше за 100 =  $isLess');
-print('Чи число $number ділиться на 5 без залишку = $isEqFive');
-
+  print('Чи число $number  більше за 50 $isBiger');
+  print('Чи число $number менше за 100 =  $isLess');
+  print('Чи число $number ділиться на 5 без залишку = $isEqFive');
 }
 
 /// Завдання 3: Логічні оператори
@@ -59,11 +56,10 @@ print('Чи число $number ділиться на 5 без залишку = $
 /// Чи потрібно почекати (якщо магазин закритий або немає грошей).
 /// Використайте оператори &&, ||, !.
 void task3() {
-final hasMoney = true ;
-final isStoreOpen = true;
-final isCanBuy = hasMoney && isStoreOpen;
-final isHasToWait = !isStoreOpen || !hasMoney;
-
+  final hasMoney = true;
+  final isStoreOpen = true;
+  final isCanBuy = hasMoney && isStoreOpen;
+  final isHasToWait = !isStoreOpen || !hasMoney;
 }
 
 /// Завдання 4: Тернарний оператор
@@ -76,13 +72,12 @@ final isHasToWait = !isStoreOpen || !hasMoney;
 /// Якщо менше 10 — вивести “Дуже холодно”.
 
 void task4() {
-final temperature = 9;
-final isHot = (temperature>25) ? 'Тепло' : 'Прохолодно';
-final isCold = (temperature<10) ? 'Дуже холодно' : 'Температура: $temperature' ;
-//print(isHot);
-//print(isCold);
-
-
+  final temperature = 9;
+  final isHot = (temperature > 25) ? 'Тепло' : 'Прохолодно';
+  final isCold =
+      (temperature < 10) ? 'Дуже холодно' : 'Температура: $temperature';
+  //print(isHot);
+  //print(isCold);
 }
 
 /// Завдання 5: Оператори присвоєння
@@ -102,18 +97,16 @@ final isCold = (temperature<10) ? 'Дуже холодно' : 'Температ�
 /// Виведіть остаточний результат.
 
 void task5() {
+  double score = 0;
+  final correctAnswers = 17;
+  final mistakes = 3;
+  final totalQuestions = 20;
 
-double score = 0;
-final correctAnswers = 17;
-final mistakes = 3;
-final totalQuestions = 20;
-
-score += correctAnswers*10;
-score -= mistakes*5;
-score *=2;
-score /= totalQuestions;
-print(score);
-
+  score += correctAnswers * 10;
+  score -= mistakes * 5;
+  score *= 2;
+  score /= totalQuestions;
+  print(score);
 }
 
 /// Завдання 6: Умовні конструкції if/else
@@ -130,23 +123,17 @@ print(score);
 
 void task6() {
   final examScore = 56;
-  if (examScore > 90){
+  if (examScore > 90) {
     print('Відмінно');
-  }else 
-  if (examScore >= 75 && examScore <90){
+  } else if (examScore >= 75 && examScore < 90) {
     print('Добре');
-  }else 
-  if (examScore >= 60 && examScore <75){
+  } else if (examScore >= 60 && examScore < 75) {
     print('Задовільно');
-  }
-  else 
-  if(examScore >= 20 && examScore <60){
+  } else if (examScore >= 20 && examScore < 60) {
     print('Не здано');
-  }else {
+  } else {
     print('Повторити курс');
   }
-
-
 }
 
 /// Завдання 7: Конструкція switch statement
@@ -158,27 +145,25 @@ void task6() {
 /// Додатково: для вихідних (6, 7) вивести “Вихідний день 🎉”.
 
 void task7() {
-final dayNumber = 9;
-switch(dayNumber){
-case  1:
-print('Понеділок');
-case  2:
-print('Вівторок');
-case  3:
-print('Середа');
-case  4:
-print('Четвер');
-case  5:
-print('Пятниця');
-case  6:
-print('Субота Вихідний день 🎉');
-case  7:
-print('Неділя Вихідний день 🎉');
-case <1 || > 7 :
-print('Невірний номер дня');
-
-}
-
+  final dayNumber = 9;
+  switch (dayNumber) {
+    case 1:
+      print('Понеділок');
+    case 2:
+      print('Вівторок');
+    case 3:
+      print('Середа');
+    case 4:
+      print('Четвер');
+    case 5:
+      print('Пятниця');
+    case 6:
+      print('Субота Вихідний день 🎉');
+    case 7:
+      print('Неділя Вихідний день 🎉');
+    case < 1 || > 7:
+      print('Невірний номер дня');
+  }
 }
 
 /// Завдання 8: Цикли for
@@ -187,23 +172,21 @@ print('Невірний номер дня');
 /// Обчисліть суму чисел від 1 до 10.
 
 void task8() {
-for(var i = 1 ; i<=10; i++ ){
-  print(i);
-}
-
-for(var i = 1 ; i<=10 ; i++ ){
- if(i % 2 == 0 ) {
-  print(i);
+  for (var i = 1; i <= 10; i++) {
+    print(i);
   }
-}
 
-var res = 0;
-for(var i = 1 ; i<=10; i++ ){
-  res +=i;
-  
-}
-//print(res);
+  for (var i = 1; i <= 10; i++) {
+    if (i % 2 == 0) {
+      print(i);
+    }
+  }
 
+  var res = 0;
+  for (var i = 1; i <= 10; i++) {
+    res += i;
+  }
+  //print(res);
 }
 
 /// Завдання 9: Цикл while
@@ -214,18 +197,16 @@ for(var i = 1 ; i<=10; i++ ){
 /// якщо непарне — “Непарне число: …”.
 
 void task9() {
-  var i = 10; 
-while(i>=0){
-  if(i%2==0){
-    print('Парне число: … $i');
-  }else {
-    print('Непарне число: $i');
+  var i = 10;
+  while (i >= 0) {
+    if (i % 2 == 0) {
+      print('Парне число: … $i');
+    } else {
+      print('Непарне число: $i');
+    }
+
+    i--;
   }
-
- 
-  i--;
-}
-
 }
 
 /// Завдання 10: Break і Continue
@@ -235,12 +216,13 @@ while(i>=0){
 /// Якщо число більше 15 — зупиніть цикл (break).
 /// Виведіть тільки ті числа, які пройшли обидві перевірки.
 void task10() {
-for(var i = 1; i <=20; i++){
-  if(i%3==0) continue;
-  else if (i > 15) break;
-  else {print(i);}
-
-}
-
-
+  for (var i = 1; i <= 20; i++) {
+    if (i % 3 == 0)
+      continue;
+    else if (i > 15)
+      break;
+    else {
+      print(i);
+    }
+  }
 }
